@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Contact Me</title>
+  </head>
+
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>Contact Me</legend>
+        <table>
+          <tr>
+            <td><label for="first name">First Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="first name"
+                first
+                name="first name"
+                required
+                placeholder="Enter your first name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="last name">Last Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="last name"
+                last
+                name="last name"
+                required
+                placeholder="Enter your last name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Gender:</label></td>
+            <td>
+              <input type="radio" name="gender" value="male" /> Male
+              <input type="radio" name="gender" value="female" /> Female
+              <input type="radio" name="gender" value="others" /> Pefer not to
+              say
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                email="email"
+                required
+                placeholder="Enter a valid email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Services:</label></td>
+            <td>
+              <input type="checkbox" value="web" />Web Development
+              <input type="checkbox" value="AiMl" />AI/ML
+              <input type="checkbox" value="backend" />Backend
+            </td>
+          </tr>
+          <tr>
+            <td><label>Reason for contract: </label></td>
+            <td>
+              <select name="reason for contact" id="reason for contact">
+                <option>Please select any</option>
+                <option>Job</option>
+                <option>Projects</option>
+                <option>Thesis</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Book Solt:</label></td>
+            <td><input type="datetime-local" id="date" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Register" />
+              <input type="reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <br />
+    <a href="../index.html">Go Back to Home Page</a>
+  </body>
+</html>

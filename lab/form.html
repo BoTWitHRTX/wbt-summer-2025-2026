@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Donor Form</title>
+  </head>
+  <body>
+    <h3>Donor Information</h3>
+    <form method="post">
+      <table>
+        <tr>
+          <td><label for="First Name">First Name*</label></td>
+          <td><input type="text" id="First Name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="Last Name">Last Name*</label></td>
+          <td><input type="text" id="Last Name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="Company">Company</label></td>
+          <td><input type="text" id="Company" /></td>
+        </tr>
+        <tr>
+          <td><label for="Address 1">Address 1*</label></td>
+          <td><input type="text" id="Address 1" required /></td>
+        </tr>
+        <tr>
+          <td><label for="Address 2">Address 2</label></td>
+          <td><input type="text" id="Address 2" /></td>
+        </tr>
+        <tr>
+          <td><label for="City">City*</label></td>
+          <td><input type="text" id="City" required /></td>
+        </tr>
+        <tr>
+          <td><label for="State">State</label></td>
+          <td>
+            <select name="State" id="State">
+              <option value="null">Select a State</option>
+              <option value="US">United States</option>
+              <option value="UK">United Kingdom</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="zip code">Zip Code*</label></td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td><label for="Country">Country*</label></td>
+          <td>
+            <select name="Country" id="Country">
+              <option value="null">Select a Country</option>
+              <option value="bd">Bangladesh</option>
+              <option value="ind">India</option>
+              <option value="jp">Japan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Phone">Phone</label></td>
+          <td><input type="tel" name="Phone" id="Phone" /></td>
+        </tr>
+        <tr>
+          <td><label for="Fax">Fax</label></td>
+          <td><input type="number" name="Fax" id="Fax" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email*</label></td>
+          <td><input type="email" name="email" id="email" required /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Donation Amount"
+              >Donation Amount*<small
+                >Check a button or type in amount</small
+              ></label
+            >
+          </td>
+          <td>
+            <input type="radio" name="amount" id="amount" />None
+            <input type="radio" name="amount" id="amount" />$50
+            <input type="radio" name="amount" id="amount" />$75
+            <input type="radio" name="amount" id="amount" />$100
+            <input type="radio" name="amount" id="amount" />$250
+            <input type="radio" name="amount" id="amount" />Other
+            <br />
+            <label>Other Amount $</label>
+            <input type="number" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Recurring Donation"
+              >Recurring Donation <small> (Check if yes)</small></label
+            >
+          </td>
+          <td>
+            <input type="checkbox" />I am interested in giving a regular basis.
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <label>Mounthly Credit Card $</label>
+            <input type="number" />
+            <label>For</label>
+            <input type="number" />
+            <label>Months</label>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <h3>Honorarium and Memorial Donation Information</h3>
+    <form action="post">
+      <table>
+        <tr>
+          <td><label>I would like to make this donation</label></td>
+          <td>
+            <input type="radio" name="opt" id="opt" />To Honor <br />
+            <input type="radio" name="opt" id="opt" />In Memory of
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Name">Name</label></td>
+          <td><input type="text" id="Name" /></td>
+        </tr>
+        <tr>
+          <td><label for="acdt">Acknowledge Donation to</label></td>
+          <td><input type="text" id="acdt" /></td>
+        </tr>
+        <tr>
+          <td><label for="add">Address</label></td>
+          <td><input type="text" id="add" /></td>
+        </tr>
+        <tr>
+          <td><label for="city">City</label></td>
+          <td><input type="text" id="city" /></td>
+        </tr>
+        <tr>
+          <td><label for="State">State</label></td>
+          <td>
+            <select name="State" id="State">
+              <option value="null">Select a State</option>
+              <option value="US">United States</option>
+              <option value="UK">United Kingdom</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="zip">Zip</label></td>
+          <td><input type="number" /></td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <br />
+    <input type="reset" />
+    <button>Continue</button>
+  </body>
+</html>
