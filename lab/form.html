@@ -4,9 +4,11 @@
     <title>Donor Form</title>
   </head>
   <body>
-    <h3>Donor Information</h3>
     <form method="post">
       <table>
+        <tr>
+          <h2>Donor Information</h2>
+        </tr>
         <tr>
           <td><label for="First Name">First Name*</label></td>
           <td><input type="text" id="First Name" required /></td>
@@ -109,12 +111,9 @@
             <label>Months</label>
           </td>
         </tr>
-      </table>
-    </form>
-
-    <h3>Honorarium and Memorial Donation Information</h3>
-    <form action="post">
-      <table>
+        <tr>
+          <td><h2>Honorarium and Memorial Donation Information</h2></td>
+        </tr>
         <tr>
           <td><label>I would like to make this donation</label></td>
           <td>
@@ -151,6 +150,77 @@
         <tr>
           <td><label for="zip">Zip</label></td>
           <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Additional Information</h2>
+            <p>
+              Please enter your name, company or organization as you would like
+              it to appear in our publications:
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Name">Name</label></td>
+          <td><input type="text" id="Name" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" />I would like my gift to remain anonymous.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" />My employer offers a matching gift program.
+            I will mail the matching gift form.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" />Please save the cost of acknowledging this
+            gift by not mailing a thank you letter.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Comments</label>
+            <p>(Please type any questions or feedback here)</p>
+          </td>
+          <td>
+            <textarea cols="30" rows="5"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label>How may we contact you?</label></td>
+          <td><input type="checkbox" name="contact" />E-mail</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" name="contact" />Postal Mail</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" name="contact" />Telephone</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" name="contact" />Fax</td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              I would like to recieve newsletters and information about special
+              events by
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" name="contact" />E-mail</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" name="contact" />Postal Mail</td>
         </tr>
       </table>
     </form>
