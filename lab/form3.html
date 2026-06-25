@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Form 3</title>
+  </head>
+
+  <body>
+    <h1>Create your account</h1>
+    <p>Join us in a couple of steps.</p>
+
+    <form method="post">
+      <div class="inputField">
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="Jane Doe" name="name" id="name" />
+      </div>
+
+      <div class="inputField">
+        <label for="age">Age</label>
+        <input type="number" placeholder="28" name="age" id="age" />
+      </div>
+
+      <div class="inputField">
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" />
+      </div>
+
+      <div class="inputField">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          placeholder="jane@example.com"
+          name="email"
+          id="email"
+        />
+      </div>
+
+      <div class="inputField">
+        <label for="pass">Password</label>
+        <input type="password" placeholder="*******" name="pass" id="pass" />
+      </div>
+
+      <div class="radioField">
+        <label>Preferred contact</label>
+        <input type="radio" name="contact" />Email
+        <input type="radio" name="contact" />Phone
+        <input type="radio" name="contact" />SMS
+      </div>
+
+      <div class="button">
+        <button type="submit" class="buttonPrimary">Submit</button>
+        <button type="reset" class="buttonSecondary">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
